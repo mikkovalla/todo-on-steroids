@@ -12,9 +12,10 @@ const reminder = (action) => {
 
 const removeById = (state = [], id) => {
   const reminders = state.filter(reminder => reminder.id !== id)
-  console.log('new rmeinders array', reminders)
+  //console.log('new rmeinders array', reminders)
   return reminders
 }
+
 const reminders = (state = [], action) => {
   let reminders = null
   state = read_cookie('reminders')
@@ -29,9 +30,9 @@ const reminders = (state = [], action) => {
       bake_cookie('reminders', reminders)
       return reminders
     case CLEAR_REMINDERS:
-    reminders = []
-    bake_cookie('reminders', reminders)
-    return reminders  
+      reminders = []
+      bake_cookie('reminders', reminders)
+      return reminders  
     default: 
     return state
   }

@@ -16,13 +16,14 @@ class App extends Component {
 
   addReminder() {
     //console.log('state:', this)
-    console.log("due date: ", this.state.dueDate)
+    //console.log("due date: ", this.state.dueDate)
     this.props.addReminder(this.state.text, this.state.dueDate)
+
   }
 
   deleteReminder (id) {
-    console.log('delete action', id)
-    console.log('props', this.props)
+    //console.log('delete action', id)
+    //console.log('props', this.props)
     this.props.deleteReminder(id)
   }
 
@@ -54,7 +55,7 @@ class App extends Component {
     )
   }
   render () {
-    console.log('this.props', this.props)
+    //console.log('this.props', this.props)
     return (
       <div className="App">
         <div className="title">

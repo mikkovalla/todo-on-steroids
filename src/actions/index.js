@@ -6,7 +6,7 @@ export const addReminder = (text, dueDate) => {
     text,
     dueDate
   }
-  console.log('action happening', action)
+  //console.log('action happening', action)
   return action
 }
 
@@ -15,7 +15,7 @@ export const deleteReminder = (id) => {
     type: DELETE_REMINDER,
     id
   }
-  console.log('action delete', action)
+  //console.log('action delete', action)
   return action
 }
 
